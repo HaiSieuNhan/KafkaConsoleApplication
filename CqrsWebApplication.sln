@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqrsWebApplication", "CqrsWebApplication\CqrsWebApplication.csproj", "{8407320D-C16F-4FD0-9CCE-1D5C94744D63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaProducerConsoleApp", "KafkaProducerConsoleApp\KafkaProducerConsoleApp.csproj", "{8F8F5C85-4904-4478-9CF1-0382CB53FB8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaProducerConsoleApp", "KafkaProducerConsoleApp\KafkaProducerConsoleApp.csproj", "{8F8F5C85-4904-4478-9CF1-0382CB53FB8E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaConsumerConsoleApp", "KafkaConsumerConsoleApp\KafkaConsumerConsoleApp.csproj", "{A867CA60-5E64-4C0B-9430-FCE0BF9D738F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaConsumerConsoleApp", "KafkaConsumerConsoleApp\KafkaConsumerConsoleApp.csproj", "{A867CA60-5E64-4C0B-9430-FCE0BF9D738F}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C09EF909-130D-4973-B576-CE0A8F13A209}"
 EndProject
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8407320D-C16F-4FD0-9CCE-1D5C94744D63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8407320D-C16F-4FD0-9CCE-1D5C94744D63}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8407320D-C16F-4FD0-9CCE-1D5C94744D63}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8407320D-C16F-4FD0-9CCE-1D5C94744D63}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8F8F5C85-4904-4478-9CF1-0382CB53FB8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8F8F5C85-4904-4478-9CF1-0382CB53FB8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F8F5C85-4904-4478-9CF1-0382CB53FB8E}.Release|Any CPU.ActiveCfg = Release|Any CPU

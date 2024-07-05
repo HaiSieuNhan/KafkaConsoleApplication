@@ -41,7 +41,7 @@ class Program
         var producer = new EventProducer("localhost:9092");
 
         var events = new List<OrderCreatedEvent>();
-        for (int i = 0; i < 10000; i++)
+        for (int i = 0; i < 1000000; i++)
         {
             var orderEvent = new OrderCreatedEvent
             {

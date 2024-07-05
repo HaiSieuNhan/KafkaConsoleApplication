@@ -19,7 +19,7 @@ public class EventConsumer
     private readonly IConsumer<Null, string> _consumer;
     private readonly MongoDBContext _dbContext;
     private readonly List<OrderCreatedEvent> _batchEvents;
-    private readonly int _batchSize = 300; // Kích thước lô
+    private readonly int _batchSize = 3000; // Kích thước lô
     private readonly SemaphoreSlim _batchLock;
 
     public EventConsumer(string brokerList, string groupId, string mongoConnectionString, string mongoDatabaseName)
@@ -101,7 +101,7 @@ class Program
         var consumer = new EventConsumer(
             "localhost:9092",
             "order_event_group",
-            "mongodb://localhost:27017",
+			"mongodb://root:example@localhost:27017/",
             "OrderManagement"
         );
 
