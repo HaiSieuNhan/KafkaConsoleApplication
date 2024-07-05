@@ -12,6 +12,7 @@ public class OrderCreatedEvent
     public string ProductName { get; set; }
     public int Quantity { get; set; }
     public decimal Price { get; set; }
+	public DateTime CreatedDate { get; set; }
 }
 
 public class EventConsumer
@@ -48,8 +49,10 @@ public class EventConsumer
                 var orderEvent = JsonConvert.DeserializeObject<OrderCreatedEvent>(cr.Message.Value);
                 Console.WriteLine($"OrderCreatedEvent consumed: {cr.Message.Value}");
 
-                // Thêm sự kiện vào danh sách lô
-                _batchLock.Wait();
+				orderEvent.CreatedDate = DateTime.Now;
+
+				// Thêm sự kiện vào danh sách lô
+				_batchLock.Wait();
                 _batchEvents.Add(orderEvent);
                 _batchLock.Release();
 
