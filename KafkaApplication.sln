@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaConsumerConsoleApp", "
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C09EF909-130D-4973-B576-CE0A8F13A209}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaProducerWebApplication", "..\KafkaProducerWebApplication\KafkaProducerWebApplication.csproj", "{FA3266FD-C0CE-4ACC-AB4F-6226E783502C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C09EF909-130D-4973-B576-CE0A8F13A209}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C09EF909-130D-4973-B576-CE0A8F13A209}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C09EF909-130D-4973-B576-CE0A8F13A209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA3266FD-C0CE-4ACC-AB4F-6226E783502C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA3266FD-C0CE-4ACC-AB4F-6226E783502C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA3266FD-C0CE-4ACC-AB4F-6226E783502C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA3266FD-C0CE-4ACC-AB4F-6226E783502C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
